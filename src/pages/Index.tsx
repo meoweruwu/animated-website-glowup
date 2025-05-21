@@ -39,8 +39,8 @@ const Index = () => {
       <div className={`relative z-10 min-h-screen flex flex-col items-center justify-center px-4 
                        transition-opacity duration-1000 ease-in-out ${isLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <div className="text-center mb-8">
-          <div className="text-white/80 text-xl md:text-2xl mb-2 animate-fade-in">The Work Of:</div>
-          <h1 className="text-zillex-pink text-6xl md:text-8xl font-bold mb-4 animate-float glow-text">
+          <div className="text-white/80 text-xl md:text-2xl mb-4 animate-fade-in">The Work Of:</div>
+          <h1 className="text-zillex-pink text-6xl md:text-8xl font-bold mb-0 animate-float glow-text">
             ZILLEX
           </h1>
         </div>
@@ -50,7 +50,14 @@ const Index = () => {
         <div className="mt-12 w-full max-w-4xl animate-pulse-light">
           <ProjectCard 
             title="Terrain Serializer" 
-            detailsLink="#details" 
+            detailsLink="terrainserializer" 
+          />
+        </div>
+
+		<div className="mt-12 w-full max-w-4xl animate-pulse-light">
+          <ProjectCard 
+            title="Hiiiiiiiiii" 
+            detailsLink="terrainserializer" 
           />
         </div>
       </div>

@@ -92,7 +92,7 @@ export default {
 					'50%': { transform: 'translateY(-10px)' }
 				},
 				'pulse-light': {
-					'0%, 100%': { opacity: '0.4' },
+					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.8' }
 				},
 				'twinkle': {
@@ -104,10 +104,13 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'float': 'float 6s ease-in-out infinite',
-				'pulse-light': 'pulse-light 4s ease-in-out infinite',
-				'twinkle-1': 'twinkle 3s ease-in-out infinite',
-				'twinkle-2': 'twinkle 5s ease-in-out infinite',
-				'twinkle-3': 'twinkle 7s ease-in-out infinite'
+				'pulse-light': 'pulse-light 3s ease-in-out infinite',
+				'twinkle-1': 'twinkle 3.25s ease-in-out infinite',
+				'twinkle-2': 'twinkle 3s ease-in-out infinite',
+				'twinkle-3': 'twinkle 2.75s ease-in-out infinite',
+				'twinkle-4': 'twinkle 2.5s ease-in-out infinite',
+				'twinkle-5': 'twinkle 2.25s ease-in-out infinite',
+				'twinkle-6': 'twinkle 2s ease-in-out infinite'
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -1,5 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
+import seedrandom from 'seedrandom'
+
+const rng = seedrandom('test')
 
 interface Star {
   id: number;
@@ -14,17 +17,17 @@ const StarBackground: React.FC = () => {
   
   useEffect(() => {
     const generateStars = () => {
-      const starCount = Math.floor(window.innerWidth * window.innerHeight / 10000) + 50;
+      const starCount = Math.floor(window.innerWidth * window.innerHeight / 10000) + 500;
       const newStars: Star[] = [];
       
       for (let i = 0; i < starCount; i++) {
-        const animationClasses = ['animate-twinkle-1', 'animate-twinkle-2', 'animate-twinkle-3'];
+        const animationClasses = ['animate-twinkle-1', 'animate-twinkle-2', 'animate-twinkle-3', 'animate-twinkle-4', 'animate-twinkle-5', 'animate-twinkle-6'];
         newStars.push({
           id: i,
-          x: Math.random() * 100,
-          y: Math.random() * 100,
-          size: Math.random() * 2 + 1,
-          animationClass: animationClasses[Math.floor(Math.random() * animationClasses.length)]
+          x: rng() * 100,
+          y: rng() * 100,
+          size: rng() * 2 + 1,
+          animationClass: animationClasses[Math.floor(rng() * animationClasses.length)]
         });
       }
       

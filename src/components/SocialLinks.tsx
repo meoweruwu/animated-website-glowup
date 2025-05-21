@@ -12,7 +12,7 @@ interface SocialLinksProps {
 
 const SocialLinks: React.FC<SocialLinksProps> = ({ links }) => {
   return (
-    <div className="flex items-center justify-center gap-4 my-6">
+    <div className="flex items-center justify-center gap-6 my-2">
       {links.map((link) => (
         <a 
           key={link.name}
